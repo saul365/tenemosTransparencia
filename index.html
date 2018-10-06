@@ -3,7 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title>Powerful Team - Teletón</title>
+  <link rel="shortcut icon" href="img/icon.png">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -11,29 +12,35 @@
   <script src="js/anime.min.js"></script>
 </head>
 <body>
+  <!-- Navigation bar -->
   <nav class="teleton-purple" role="navigation">
-    <div class="nav-wrapper container"><span id="logo-container" class="brand-logo">
-    <img id="logo" width="130px" src="img/logo.png" alt="">
-  </span>
+    <div class="nav-wrapper container">
+      <span id="logo-container" class="brand-logo">
+        <img id="logo" width="130px" src="img/logo.png" alt="">
+      </span>
+      <!-- vista desktop -->
       <ul class="right hide-on-med-and-down letter-white">
-        <li><a href="#">  Home</a></li>
-        <li><a href="#">¿Qué hacen con el dinero?</a></li>
-        <li><a href="#">Estadísticas</a></li>
-
+        <li><a href="#home">Home</a></li>
+        <li><a href="#whatwedo">¿Qué hacen con el dinero?</a></li>
+        <li><a href="#stadistics">Estadísticas</a></li>
       </ul>
+      <!-- vista responsive -->
       <ul id="nav-mobile" class="sidenav letter-purple">
-        <li><a href="#"><i class="material-icons">home</i>Home</a></li>
-        <li><a href="#"><i class="material-icons">money</i>¿Qué hacen con el dinero?</a></li>
-        <li><a href="#"><i class="material-icons">graphic_eq</i>Estadísticas</a></li>
-
+        <li><a href="#home"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#whatwedo"><i class="material-icons">money</i>¿Qué hacen con el dinero?</a></li>
+        <li><a href="#stadistics"><i class="material-icons">graphic_eq</i>Estadísticas</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
+  <!-- Home -->
+  <div class="section no-pad-bot" id="home">
     <div class="container">
       <br><br>
+      <h2 class="center-align"><bold>30000!</bold></h2>
+
       <h5 class="header center orange-text"><i class="material-icons">home</i>
+
         <div id="JSobjectProp">
           <pre></pre>
         </div>
@@ -47,7 +54,14 @@
       <br><br>
     </div>
   </div>
-
+  <!-- What we do -->
+  <div class="" id="whatwedo">
+    que hacemos
+  </div>
+  <!-- stadistics -->
+  <div class="" id="stadistics">
+    estadisticas
+  </div>
 
 
   <!--Input fields-->
@@ -172,7 +186,7 @@
     round: 1,
     update: function() {
       var el = document.querySelector('#JSobjectProp pre');
-      el.innerHTML = JSON.stringify(myObject);
+      el.innerHTML = myObject.PORCENTAJE;
     }
   });
   </script>
