@@ -4,8 +4,19 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
  .teleton-purple{
-  background-color: #2E1A46 !important;
+  background-color: #FFCD00 !important;
   }
+  .letter-white{
+    color: white;
+    font-weight: 900;
+  }
+  .letter-purple {
+    color:#6B1D74 !important;
+    font-weight: 900;
+  }
+body {
+  color: #6B1D74 !important;
+}
 
 .materialize-red {
   background-color: #e51c23 !important;
