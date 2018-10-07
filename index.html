@@ -51,7 +51,7 @@
           <h5 class="header col s12 light">Ponte de pie por México</h5>
         </div>
         <div class="row center">
-          <a href="rastreo.html" target="_blank" class="btn-large waves-effect waves-light orange">Rastrea tu donación.</a>
+          <a href="#" id="rastreoDinero" class="btn-large waves-effect waves-light orange">Rastrea tu donación.</a>
         </div>
         <div class="row center">
           <a href="#" id="monitoreoDinero">¿Que hacen con el dinero?</a>
@@ -89,28 +89,80 @@
     </div>
   </div>
 
+  <!-- 2da vista -->
+  <div id="secondView">
+    <div class="section no-pad-bot" id="home">
+      <div class="container">
+        <br><br>
+        <h2 class="center-align"><bold> ¿Deseas saber dónde esta tu donativo?</bold></h2>
+
+        <div class="row center">
+          <h5 class="header col s12 light">Ponte de pie por México</h5>
+        </div>
+          <div class="container">
+              <div class="row">
+                  <h4 class="center-align">Ingrese el número de autorización de su deposito.</h4>
+                  <form class="col s12">
+                  <div class="row">
+                      <div class="input-field col s10">
+                          <input placeholder="num Autorización" id="numAut" type="text" class="validate"></input>
+                          <label for="numAut">numero de autorización</label>
+                      </div>
+                  </div>
+                  </form>
+              </div>
+          </div>
+        <div class="row center">
+          <button onClick= "getNum()" class="btn-large waves-effect waves-light orange">Rastrea tu donación.</button>
+        </div>
+        <br><br>
+      </div>
+    </div>
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="images/fotoBoteo.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  ¿Quieres saber a dónde va el dinero del boteo?
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+
+  <!-- 3era vista -->
+  <div id="thirdView">
+    <p>aca podriamos poner graficos de las estadisticas</p>
+  </div>
+
   <!-- 4ta vista de la interfaz - que hacemos con los donativos -->
   <div id="fourthView" class="container center">
     <h2 class="center">¿Qué hacemos con los donativos?</h2>
     <div class="row"></div>
     <ul class="collapsible">
       <li>
-        <div class="collapsible-header"> <strong> <i class="material-icons">android</i>Equipo</strong></div>
-        <div class="collapsible-body"><span>
-          Entrenamiento robotico de la marcha (Lokomat): para niños con lesion cerebral o medular
-Realidad Virtual:  para niños con discapacidad neuromusculoesqueletica
-Centro de estimulacion multisensorial(CEMS): para niños con discapacidad neuromusculoesqueletica
-Laboratorio de analisis de movimiento
-Hidroterapia
+        <div class="collapsible-header">
+          <strong> <i class="material-icons">android</i>Equipo</strong>
+        </div>
+        <div class="collapsible-body">
+          <p>Entrenamiento robotico de la marcha (Lokomat): para niños con lesion cerebral o medular</p>
+          <p>Realidad Virtual:  para niños con discapacidad neuromusculoesqueletica</p>
+          </p>Centro de estimulacion multisensorial(CEMS): para niños con discapacidad neuromusculoesqueletica</p>
+          </p>Laboratorio de analisis de movimiento</p>
+          </p>Hidroterapia</p>
+          <h4>Equipo nuevo</h4>
 
-Equipo nuevo
+          <p>Equipo robótico de entrenamiento de miembro superior (Armeo).</p>
+          <p>Realidad virtual para entrenamiento de miembros superiores y equilibrio (Pablo).</p>
+          <p>Circuito para entrenamiento de diferentes etapas para la marcha (Tera).</p>
+          <p>Tinas multifuncionales con hidrojets para focalizar áreas de Tratamiento.</p>
 
-Equipo robótico de entrenamiento de miembro superior (Armeo).
-Realidad virtual para entrenamiento de miembros superiores y equilibrio (Pablo).
-Circuito para entrenamiento de diferentes etapas para la marcha (Tera).
-Tinas multifuncionales con hidrojets para focalizar áreas de Tratamiento.
-
-        </span></div>
+        </div>
       </li>
       <li>
         <div class="collapsible-header"><strong><i class="material-icons">enhanced_encryption</i>Tratamientos</strong></div>
@@ -186,5 +238,6 @@ Tinas multifuncionales con hidrojets para focalizar áreas de Tratamiento.
   <script src="js/countMoney.js"></script>
   <script src="js/monitoreoDinero.js"></script>
   <script src="js/views.js"></script>
+  <script src="js/checkDeposit.js"></script>
   </body>
 </html>
