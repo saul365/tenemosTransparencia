@@ -7,10 +7,8 @@ firebase.database().ref().on("value", function(snapshot) {
     if(numCuenta==numAut){
       document.write('<iframe src="ticket.html/?id=1&number'+numCuenta+'"><\iframe>')
     }
-    else{
-    M.toast({html: 'No se econtró su número de autorización'})
-    }
   })
+  M.toast({html: 'No se econtró su número de autorización'})
 }, function (errorObject) {
   console.log("The read failed: " + errorObject.code);
 });
