@@ -37,7 +37,7 @@
   <div class="section no-pad-bot" id="home">
     <div class="container">
       <br><br>
-      <h2 class="center-align"><bold>30000!</bold></h2>
+      <h2 class="center-align"><bold> <span id="actualCount"></span> !</bold></h2>
 
       <h5 class="header center orange-text"><i class="material-icons">home</i>
 
@@ -190,6 +190,21 @@
     }
   });
   </script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBm8pPrhXYVrPk4cFw7B1B9c22kBNQF1Rw",
+      authDomain: "teletonmexico-powerfulteam.firebaseapp.com",
+      databaseURL: "https://teletonmexico-powerfulteam.firebaseio.com",
+      projectId: "teletonmexico-powerfulteam",
+      storageBucket: "teletonmexico-powerfulteam.appspot.com",
+      messagingSenderId: "672689818864"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="js/countMoney.js"></script>
 
   </body>
 </html>
