@@ -5,7 +5,7 @@ firebase.database().ref().on("value", function(snapshot) {
   todos.forEach(element => {
     numCuenta=parseInt(snapshot.val()[element].Autorizacion);
     if(numCuenta==numAut){
-      document.write('<iframe src="ticket.html/?id=1&number'+numCuenta+'"><\iframe>')
+      document.write('<iframe src="ticket.html/?id=1&number'+numCuenta+'" style="width: 800px,height:800px;"><\iframe>')
     }
   })
   M.toast({html: 'No se econtró su número de autorización'})
