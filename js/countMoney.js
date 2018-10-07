@@ -5,7 +5,9 @@ firebase.database().ref().on("value", function(snapshot) {
     count = count + parseInt(snapshot.val()[element].Monto);
   })
   let percentage=(count*100)/456013740;
-  document.getElementById('actualCount').innerHTML ="$"+Math.trunc(count/1000000000)+","+Math.trunc(count/1000000)+","+Math.trunc(count/1000)+","+(count%1000);
+  var prim=count%1000000000;
+  var sec=prim%1000000;
+  document.getElementById('actualCount').innerHTML ="$"+Math.trunc(count/1000000000)+","+Math.trunc(prim/1000000)+","+Math.trunc(sec/1000)+","+(count%1000);
   document.getElementById('porcentaje').innerHTML=Math.round(percentage)+"%";
 }, function (errorObject) {
   console.log("The read failed: " + errorObject.code);
