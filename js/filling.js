@@ -16,7 +16,7 @@ var ammount=getQueryVariable('number');
 if(ammount/3030<1){
   sec.innerHTML='ya fue recibido en el Teletón, y gracias a el un niño podrá ser atendido '+ammount/101+' días más para su rehabilitación.';
 }
-else if(ammount/3030<1){
+else if(ammount/36360<1){
   sec.innerHTML='ya fue recibido en el Teletón, y gracias a el un niño podrá ser atendido '+ammount/3030+' meses más para su rehabilitación.';
 }
 else{
