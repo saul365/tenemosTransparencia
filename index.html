@@ -33,58 +33,68 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <!-- Home -->
-  <div class="section no-pad-bot" id="home">
-    <div class="container">
-      <br><br>
-      <h2 class="center-align"><bold> <span id="actualCount"></span> !</bold></h2>
-      <div class="row">
-        <h2 class=" center header amber-text text-darken-2"><i class="material-icons md-100">mood</i> Ya vamos
-        <div id="porcentaje" class="center amber-text text-darken-2">
-          <pre></pre>
+  <!-- 1era vista de la interfaz -->
+  <div id="firstView">
+    <!-- Home -->
+    <div class="section no-pad-bot" id="home">
+      <div class="container">
+        <br><br>
+        <h2 class="center-align"><bold> <span id="actualCount"></span> !</bold></h2>
+        <div class="row">
+          <h2 class=" center header amber-text text-darken-2"><i class="material-icons md-100">mood</i> Ya vamos
+          <div id="porcentaje" class="center amber-text text-darken-2">
+            <pre></pre>
+          </div>
+          </h2>
         </div>
-      </h2>
+        <div class="row center">
+          <h5 class="header col s12 light">Ponte de pie por México</h5>
+        </div>
+        <div class="row center">
+          <a href="rastreo.html" target="_blank" class="btn-large waves-effect waves-light orange">Rastrea tu donación.</a>
+        </div>
+        <div class="row center">
+          <a href="#" id="monitoreoDinero">¿Que hacen con el dinero?</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+
+    <!--   Icon Section   -->
+    <div class="row purple lighten-5">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons letter-purple">child_care</i></h2>
+          <h5 class="center">Prevención</h5>
+          <p class="light center">Fortalecer la prevención y la detección temprana del cáncer, la discapacidad y el autismo en nuestro país.</p>
+        </div>
       </div>
 
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons letter-purple">favorite</i></h2>
+          <h5 class="center">Unión Nacional</h5>
+          <p class="light center">Promover la unidad nacional en torno a una causa común.</p>
+        </div>
+      </div>
 
-      <div class="row center">
-        <h5 class="header col s12 light">Ponte de pie por México</h5>
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons letter-purple">location_city</i></h2>
+          <h5 class="center">Nuestros centros</h5>
+
+          <p class="light center">Tenemos el objetivo de unificar la estructura de funcionamiento y mantener los mismos estándares de calidad en todos nuestros Centros.</p>
+        </div>
       </div>
-      <div class="row center">
-        <a href="rastreo.html" target="_blank" class="btn-large waves-effect waves-light orange">Rastrea tu donación.</a>
-      </div>
-      <br><br>
     </div>
   </div>
 
-      <!--   Icon Section   -->
-      <div class="row purple lighten-5">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons letter-purple">child_care</i></h2>
-            <h5 class="center">Prevención</h5>
-            <p class="light center">Fortalecer la prevención y la detección temprana del cáncer, la discapacidad y el autismo en nuestro país.</p>
-          </div>
-        </div>
+  <!-- 4ta vista de la interfaz - que hacemos con los donativos -->
+  <div id="fourthView" class="container">
+    <h2 class="center">¿Qué hacemos con los donativos?</h2>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons letter-purple">favorite</i></h2>
-            <h5 class="center">Unión Nacional</h5>
-            <p class="light center">Promover la unidad nacional en torno a una causa común.</p>
-          </div>
-        </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons letter-purple">location_city</i></h2>
-            <h5 class="center">Nuestros centros</h5>
-
-            <p class="light center">Tenemos el objetivo de unificar la estructura de funcionamiento y mantener los mismos estándares de calidad en todos nuestros Centros.</p>
-          </div>
-        </div>
-      </div>
-
+  </div>
 
   <footer class="page-footer amber darken-2">
       <div class="footer-copyright container">
@@ -114,7 +124,6 @@
     }
   });
   </script>
-
   <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -129,6 +138,7 @@
     firebase.initializeApp(config);
   </script>
   <script src="js/countMoney.js"></script>
-
+  <script src="js/monitoreoDinero.js"></script>
+  <script src="js/views.js"></script>
   </body>
 </html>
