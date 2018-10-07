@@ -4,13 +4,6 @@ document.getElementById('monitoreoDinero').addEventListener('click', ()=> {
   document.getElementById('fourthView').style.display = 'block';
 })
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.collapsible');
-  var instances = M.Collapsible.init(elems, options);
-});
-
-// Or with jQuery
-
 $(document).ready(function(){
   $('.collapsible').collapsible();
 });
