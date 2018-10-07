@@ -9,8 +9,8 @@ firebase.database().ref().on("value", function(snapshot) {
   var sec=prim%1000000;
   var child=count/36360;
   document.getElementById('actualCount').innerHTML ="$"+Math.trunc(prim/1000000)+","+Math.trunc(sec/1000)+","+(count%1000);
-  document.getElementById('ninños').innerHTML="de la meta alcanzanzada con esto podemos atender por un año a "+child+"niños";
   document.getElementById('porcentaje').innerHTML=Math.round(percentage)+"%";
+   document.getElementById('niños').innerHTML="de la meta alcanzanzada con esto podemos atender por un año a "+child+"niños";
 }, function (errorObject) {
   console.log("The read failed: " + errorObject.code);
 });
