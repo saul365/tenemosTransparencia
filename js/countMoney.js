@@ -8,7 +8,7 @@ firebase.database().ref().on("value", function(snapshot) {
   let percentage=(count*100)/456013740;
   console.log(percentage)
   console.log(count);
-  document.getElementById('actualCount').innerHTML = count;
+  document.getElementById('actualCount').innerHTML = Math.round(count)+"%";
   document.getElementById('porcentaje').innerHTML=percentage;
 }, function (errorObject) {
   console.log("The read failed: " + errorObject.code);
