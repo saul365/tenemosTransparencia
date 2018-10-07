@@ -12,13 +12,13 @@ function getQueryVariable(variable)
 var prim=document.getElementById('Monto');
 var sec=document.getElementById('mensaje');
 var ammount=getQueryVariable(number);
- prim.innerHTML('$'+amount);
+ prim.innerHTML='$'+amount;
 if(ammount/3030<1){
-  sec.innerHTML('ya fue recibido en el Teletón, y gracias a el un niño podrá ser atendido '+ammount/101+' días más para su rehabilitación.');
+  sec.innerHTML='ya fue recibido en el Teletón, y gracias a el un niño podrá ser atendido '+ammount/101+' días más para su rehabilitación.';
 }
 else if(ammount/3630<1){
-  sec.innerHTML('ya fue recibido en el Teletón, y gracias a el un niño podrá ser atendido '+ammount/3030+' meses más para su rehabilitación.');
+  sec.innerHTML='ya fue recibido en el Teletón, y gracias a el un niño podrá ser atendido '+ammount/3030+' meses más para su rehabilitación.';
 }
 else{
-  sec.innerHTML('ya fue recibido en el Teletón, y gracias a el' +ammount/36360+' niños podrán ser atendidos por todo un año más para su rehabilitación.');
+  sec.innerHTML='ya fue recibido en el Teletón, y gracias a el' +ammount/36360+' niños podrán ser atendidos por todo un año más para su rehabilitación.';
 }
