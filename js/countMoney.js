@@ -6,6 +6,7 @@ firebase.database().ref().on("value", function(snapshot) {
     count = count + parseInt(snapshot.val()[element].Monto);
   })
   let percentage=(count*100)/456013740;
+  console.log(percentage)
   console.log(count);
   document.getElementById('actualCount').innerHTML = count;
   document.getElementById('porcentaje').innerHTML=percentage;
