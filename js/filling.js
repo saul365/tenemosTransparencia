@@ -11,7 +11,7 @@ function getQueryVariable(variable)
 }
 var prim=document.getElementById('Monto');
 var sec=document.getElementById('mensaje');
-var ammount=getQueryVariable(number);
+var ammount=getQueryVariable('number');
  prim.innerHTML='$'+amount;
 if(ammount/3030<1){
   sec.innerHTML='ya fue recibido en el Teletón, y gracias a el un niño podrá ser atendido '+ammount/101+' días más para su rehabilitación.';
