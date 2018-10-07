@@ -34,3 +34,10 @@ document.getElementById('rastreoDinero').addEventListener('click', ()=> {
   document.getElementById('firstView').style.display = 'none';
   document.getElementById('fourthView').style.display = 'none';
 })
+
+document.getElementById('home').addEventListener('click', ()=> {
+  document.getElementById('firstView').style.display = 'block';
+  document.getElementById('fourthView').style.display = 'none';
+  document.getElementById('secondView').style.display = 'none';
+  document.getElementById('thirdView').style.display = 'none';
+})
