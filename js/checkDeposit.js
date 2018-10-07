@@ -15,3 +15,7 @@ firebase.database().ref().on("value", function(snapshot) {
   console.log("The read failed: " + errorObject.code);
 });
 }
+function getNum(){
+  var checking=document.getElementById("numAut").value;
+  check(checking);
+}
