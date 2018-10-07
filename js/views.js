@@ -29,8 +29,14 @@ document.getElementById('return2to1').addEventListener('click', ()=> {
 })
 
 document.getElementById('rastreoDinero').addEventListener('click', ()=> {
-  document.getElementById('secondView').style.display = 'block';
-  document.getElementById('thirdView').style.display = 'none';
+  document.getElementById('thirdView').style.display = 'block';
+  document.getElementById('secondView').style.display = 'none';
+  document.getElementById('firstView').style.display = 'none';
+  document.getElementById('fourthView').style.display = 'none';
+})
+document.getElementById('rastreoBanmex').addEventListener('click', ()=> {
+  document.getElementById('thirdView').style.display = 'block';
+  document.getElementById('secondView').style.display = 'none';
   document.getElementById('firstView').style.display = 'none';
   document.getElementById('fourthView').style.display = 'none';
 })
